@@ -23,7 +23,7 @@ const options = {
     },
     servers: [
       {
-        url: 'https://legal-lucine-nightloveil-233e8e81.koyeb.app',
+        url: 'https://normal-angil-romeo509-7ba69129.koyeb.app',
         description: 'Production server',
       },
       {
