@@ -132,6 +132,3 @@ All error responses follow this format:
 - Be cautious when using this API in production - consider implementing authentication and additional security measures
 - The API does not implement authentication - add authentication middleware as needed for production use
 
-## License
-
-This project is licensed under the MIT License.
