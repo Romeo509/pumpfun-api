@@ -21,6 +21,16 @@ app.use(express.urlencoded({ extended: true }));
 // Swagger UI
 app.use('/api-docs', ...swaggerMiddleware);
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+    service: 'pumpfun-api'
+  });
+});
+
 // Routes
 app.use('/', routes);
 
